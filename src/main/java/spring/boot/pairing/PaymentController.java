@@ -20,7 +20,7 @@ public class PaymentController {
     }
 
     @PostMapping("/balance")
-    public CurrentBalance inputBalance(@RequestBody NewBalance balance) {
+    public Integer inputBalance(@RequestBody BalanceRequest balance) {
         return repo.saveBalance(balance);
     }
 }

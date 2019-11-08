@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f9e2138-5aeb-4160-ac43-532fec2c2c69" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/spring/boot/pairing/PaymentRepoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring/boot/pairing/CurrentBalance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring/boot/pairing/NewBalance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/boot/pairing/BalanceRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring/boot/pairing/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/boot/pairing/PaymentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring/boot/pairing/PaymentRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/boot/pairing/PaymentRepo.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,6 +83,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -89,12 +95,20 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="spring.boot.pairing" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/test/resources" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="spring.boot.pairing" />
@@ -112,19 +126,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.App">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="spring.boot.pairing.App" />
-      <module name="spring-boot-pairing.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="spring.boot.pairing.PaymentController" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+  <component name="RunManager" selected="Gradle.PaymentRepoTest.saveBalanceShouldReturnValueInBalanceRequest">
+    <configuration name="PaymentRepoTest.saveBalanceShouldReturnValueInBalanceRequest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;spring.boot.pairing.PaymentRepoTest.saveBalanceShouldReturnValueInBalanceRequest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="spring-boot-pairing [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -211,11 +232,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.PaymentRepoTest.saveBalanceShouldReturnValueInBalanceRequest" />
         <item itemvalue="Gradle.spring-boot-pairing [bootRun]" />
         <item itemvalue="Gradle.spring-boot-pairing [build]" />
         <item itemvalue="Gradle.spring-boot-pairing [clean]" />
         <item itemvalue="Gradle.spring-boot-pairing [dependencies]" />
-        <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
   </component>
@@ -231,7 +252,7 @@
       <updated>1572467663569</updated>
       <workItem from="1572467665108" duration="31000" />
       <workItem from="1572467732624" duration="2989000" />
-      <workItem from="1572470913900" duration="3047000" />
+      <workItem from="1572470913900" duration="3892000" />
     </task>
     <servers />
   </component>
