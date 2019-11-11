@@ -5,16 +5,15 @@ import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
 
 import java.util.Objects;
 
-@JsonDeserialize(builder = BalanceRequest.Builder.class)
-public class BalanceRequest {
-
+@JsonDeserialize(builder = PaymentRequest.Builder.class)
+public class PaymentRequest {
     private String value;
 
-    public BalanceRequest(String value) {
+    public PaymentRequest(String value) {
         this.value = value;
     }
 
-    private BalanceRequest(Builder builder) {
+    private PaymentRequest(Builder builder) {
         value = builder.value;
     }
 
@@ -26,7 +25,7 @@ public class BalanceRequest {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        BalanceRequest that = (BalanceRequest) o;
+        PaymentRequest that = (PaymentRequest) o;
         return Objects.equals(value, that.value);
     }
 
@@ -35,24 +34,17 @@ public class BalanceRequest {
         return Objects.hash(value);
     }
 
-    @Override
-    public String toString() {
-        return "NewBalance{" +
-                "value='" + value + '\'' +
-                '}';
-    }
-
     @JsonPOJOBuilder(withPrefix = "")
     public static final class Builder {
         private String value;
 
-        public Builder value(String val) {
+        public PaymentRequest.Builder value(String val) {
             value = val;
             return this;
         }
 
-        public BalanceRequest build() {
-            return new BalanceRequest(this);
+        public PaymentRequest build() {
+            return new PaymentRequest(this);
         }
     }
 }
